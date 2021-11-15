@@ -1,0 +1,44 @@
+{
+  "name": "Telegram File to Link Bot",
+  "description": "Robot to convert files to direct links, hosting files on Telegram servers, unlimited and without restrictions",
+  "website": "https://t.me/s/king_network",
+  "repository": "https://github.com/kimoland/file2link",
+  "logo": "https://cdn4.telesco.pe/file/dWFSEpa6s-b0GmRhHNlLdNqkM2zHNUElpHgLMpb-gE_AHnmKHz5aCgiRJejyXGb9BUTARnuP__TFCVdyioqRzIbhawUEQa3ag87ON9HtZqdUV7Mhwh1dJRzEwHmdKbnEby4UiLUaE4gnSXK-rCTWMT7nJyqh6FEXxYZ2hzcAkKDUced0issnXOIWW4cuKyMjrgw-y3dbpI6r3tJk44CO6NC0VfZERNzZzzjunTXphbMI__ABkbQyheW_3JZTCPVBR4vk3ysEMkoffN8aqjY6WO6nCoB8KGUjlWrqdLBwGmXtDa4E6nh61nleEyUwTyNY9fewgHNKmNO5gtHuVm2omg.jpg",
+  "env": {
+    "api_id": {
+      "description": "api_id Telegram to develop a robot to receive my.telegram.org ",
+      "required": "true",
+      "value": ""
+    },
+    "api_hash": {
+      "description": "api_hash Telegram to develop a robot to receive my.telegram.org ",
+      "required": "true",
+      "value": ""
+    },
+    "channel_files_chat_id": {
+      "description": " Telegram channel chat ID for storing and managing files",
+      "required": "true",
+      "value": ""
+    },
+    "channel_username": {
+      "description": "Telegram channel username for support",
+      "required": "true",
+      "value": ""
+    },
+      "channel_username_join": {
+      "description": "Telegram channel username for support",
+      "required": "true",
+      "value": ""
+    },
+    "token": {
+      "description": "Telegram robot token for launch .",
+      "required": "true",
+      "value": ""
+    },
+    "domain": {
+      "description": "Heroku application domain Example: https://newdlstar.herokuapp.com",
+      "required": "true",
+      "value": ""
+    }
+  }
+}
