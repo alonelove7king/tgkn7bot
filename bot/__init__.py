@@ -46,7 +46,7 @@ async def download(event):
                     participant = event.sender_id
                     ))
             except errors.UserNotParticipantError:
-                await event.reply(f"🌀برای استفاده از ربات ابتدا باید در کانال ما عضو بشی\n💠برای عضویت دستور /start رو ارسال کن\n🔸@{Config.CHANNEL_USERNAME_TW}")
+                await event.reply(f"🌀برای استفاده از ربات ابتدا باید در کانال ما عضو بشی\n💠برای عضویت دستور /start رو ارسال کن\n\n🔸@{Config.CHANNEL_USERNAME_TW}")
                 return
         if event.file :
             if not pv :
@@ -58,9 +58,9 @@ async def download(event):
                 file=event.message.media,
                 caption=f"◾️ID: @{sender.username}\n◽️UserID: [{event.sender_id}](tg://user?id={event.sender_id})\n♻️Converted By @{username_bot}")
             id_hex = hex(msg.id)[2:]
-            id = f"{id_hex}/@{Config.CHANNEL_USERNAME_TW}{get_file_name(msg)}"
+            id = f"{id_hex}/@{Config.CHANNEL_USERNAME_TW}-{get_file_name(msg)}"
             bot_url = f"t.me/{username_bot}?start={id_hex}"
-            await event.reply(f"✅فایل شما با موفقیت به لینک تبدیل شد\n🌐 Link : {Config.DOMAIN}/{id}\n\n🆔 @{Config.CHANNEL_USERNAME_TW}",link_preview=False)
+            await event.reply(f"✅فایل شما با موفقیت به لینک تبدیل شد\n\n🌐 Link : {Config.DOMAIN}/{id}\n\n🆔 @{Config.CHANNEL_USERNAME_TW}",link_preview=False)
             return
         elif id_msg := re.search("/start (.*)", event.raw_text ):
             if id_hex := id_msg.group(1) :
